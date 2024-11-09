@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Collection</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        /* Centered Title */
+        center {
+            display: block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #3498db;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image Styling */
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            text-transform: uppercase;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        /* Author Styling */
+        b h2 {
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+
+        /* Book Layout */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .book {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-10px);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .book-description {
+            font-size: 1em;
+            color: #333;
+            text-align: justify;
+        }
+
+        .section-title {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .book-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            .book img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>My Book Collection</h1>
+        <img src="book collection.webp" alt="book collection" width="600" height="300">
+    </center>
+    <p>Here are 10 books that I have read and highly recommend: These books span a variety of genres, from fiction to non-fiction, and each has had a significant impact on me. Whether you're looking for timeless classics that explore the human condition, or insightful works that challenge the way we think about society, these books offer something for everyone. I believe that each of these works has the power to inspire, educate, and provoke deep reflection. Whether you're a fan of gripping narratives, thought-provoking philosophy, or impactful biographies, there's a book here for you. Below is a selection of books that have shaped my perspective and which I highly recommend adding to your reading list.</p>
+
+    <!-- Fiction Books Section -->
+    <div class="section-title">Fiction</div>
+
+    <div class="book-container">
+        <div class="book">
+            <h2>The Great Gatsby</h2>
+            <img src="The Great Gatsby.jpg" alt="The Great Gatsby" width="400" height="200">
+            <b><h2><strong>Author:</strong> F. Scott Fitzgerald</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A classic novel exploring themes of wealth, love, and the American Dream in the Roaring Twenties. The Great Gatsby by F. Scott Fitzgerald is set in the 1920s and follows Jay Gatsby, a wealthy man who throws extravagant parties to win back his lost love, Daisy Buchanan. The novel critiques the emptiness of wealth and social status.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>1984</h2>
+            <img src="1984.jpg" alt="1984" width="400" height="200">
+            <b><h2><strong>Author:</strong> George Orwell</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A dystopian novel depicting a totalitarian regime, focusing on the perils of government surveillance and propaganda. 1984 by George Orwell explores themes of mind control, surveillance, and the loss of individuality.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>To Kill a Mockingbird</h2>
+            <img src="To Kill a Mockingbird.webp" alt="To Kill a Mockingbird" width="400" height="200">
+            <b><h2><strong>Author:</strong> Harper Lee</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A powerful story about race, morality, and justice in the 1930s South. The novel highlights the importance of empathy and standing up for what is right, even in the face of societal injustice.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>The Catcher in the Rye</h2>
+            <img src="The Catcher in the Rye.jpg" alt="The Catcher in the Rye" width="400" height="200">
+            <b><h2><strong>Author:</strong> J.D. Salinger</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> The Catcher in the Rye by J.D. Salinger follows Holden Caulfield, a disenchanted teenager struggling with alienation and the harsh realities of adulthood. The novel explores themes of isolation, identity, and the loss of innocence.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>Brave New World</h2>
+            <img src="Brave New World.webp" alt="Brave New World" width="400" height="200">
+            <b><h2><strong>Author:</strong> Aldous Huxley</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A dystopian novel set in a society where technology controls every aspect of life, promoting happiness through artificial pleasure. The book critiques the dangers of losing personal freedom in exchange for stability and pleasure.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Non-Fiction Books Section -->
+    <div class="section-title">Non-Fiction</div>
+
+    <div class="book-container">
+        <div class="book">
+            <h2>Becoming</h2>
+            <img src="Becoming.webp" alt="Becoming" width="400" height="200">
+            <b><h2><strong>Author:</strong> Michelle Obama</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A memoir by Michelle Obama, chronicling her life from childhood to the White House. The book highlights her struggles with identity, family, and the challenges she faced as a woman of color in positions of power.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>Educated</h2>
+            <img src="Educated.jpg" alt="Educated" width="400" height="200">
+            <b><h2><strong>Author:</strong> Tara Westover</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> A memoir about a woman escaping a strict, survivalist upbringing to pursue education and personal freedom. Tara’s journey from isolation to earning a Ph.D. from Cambridge is a powerful testament to resilience.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>Outliers</h2>
+            <img src="Outliers.png" alt="Outliers" width="400" height="200">
+            <b><h2><strong>Author:</strong> Malcolm Gladwell</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> Gladwell explores the external factors that contribute to high levels of success, challenging the idea of "self-made" success. The book highlights the importance of opportunity and cultural background.</p>
+            </div>
+        </div>
+
+        <div class="book">
+            <h2>Sapiens: A Brief History of Humankind</h2>
+            <img src="Sapiens.jpg" alt="Sapiens" width="400" height="200">
+            <b><h2><strong>Author:</strong> Yuval Noah Harari</h2></b>
+            <div class="book-description">
+                <p><strong>Description:</strong> Harari's sweeping history explores the evolution of Homo sapiens and how we shaped the world today. The book offers deep insights into culture, technology, and the human impact on society.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
